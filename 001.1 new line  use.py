@@ -6,10 +6,10 @@ print("Hello\nWorld")
 
 
 
-print(" \n ")
+print(" \n ") // Spaces printed
    #vs
 print("vs")
-print("\n")  
+print("\n")  // spaces not printed
 
 
 name = "Alice"
