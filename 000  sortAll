@@ -197,6 +197,9 @@ reverse_list= myList[::-1]
 
 #
 
+print_every_secondNumber(alternative) = myList([::2]
+clear_all_items = myList.clear()
+
 
 
 
