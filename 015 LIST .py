@@ -149,10 +149,11 @@ paired_dict = dict(zip(names, scores))
 print(paired_dict)
 
 #04
+
 paired_list = [(names[i], score) for i, score in enumerate(scores)]
 print(paired_list)
 
-
+note : enumerate() is used when you want both the index and the value while looping over something.
 
 
 
@@ -176,7 +177,7 @@ So it flattens the nested list.
 #01
 nested_list = [[1, 2], [3, 4], [5, 6]]
 flat_list = sum(nested_list, [])
-print(flat_list)
+print(flat_list) 
 
 
 
