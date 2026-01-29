@@ -4,3 +4,54 @@ print("string---",str)
 number=int(input("enter a integer number"))
 fnum=float(input("enter a float value "))
 print(" \n ")
+print(f"Name: {name}\nAge: {age}")
+print(f"Line {i}\n", end="")  # Avoids extra newlines
+
+002
+a,b,c=11,22,33  // good
+a=11,b=2,c=3     wrong
+x = y = z = 5
+
+005
+#A
+def arithmetic_operations(arr, num):
+    results = {
+        "Addition": [x + num for x in arr],
+        "Multiplication": [x * num for x in arr]
+     }
+     return results;
+
+numbers = [10, 20, 30, 40, 50]
+result = arithmetic_operations(numbers, 5)
+for operation, values in result.items():
+    print(f"{operation}: {values}")
+
+006
+print("{a} == {b}: {a == b}") 
+
+
+008
+#bitwise operator
+result = a & b 
+result = a ^ b 
+
+
+
+009
+print("apple" in fruits)  
+print(10 not in numbers) 
+print("Java" not in text) 
+
+#Strings
+text = "Hello, Python!"
+#list
+fruits = ["apple", "banana", "cherry"]
+# tuple
+colors = ("red", "green", "blue")
+# Dictionaries
+person = {"name": "Alice", "age": 25, "city": "New York"}
+#set
+numbers = {10, 20, 30, 40}
+
+
+010
