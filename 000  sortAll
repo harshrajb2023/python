@@ -1,1 +1,6 @@
-sor
+001
+str=input("enter a string")
+print("string---",str)
+number=int(input("enter a integer number"))
+fnum=float(input("enter a float value "))
+print(" \n ")
