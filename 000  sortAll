@@ -200,6 +200,30 @@ reverse_list= myList[::-1]
 print_every_secondNumber(alternative) = myList([::2]
 clear_all_items = myList.clear()
 
+copy_list = myList[:]
+copy_list=myList
+copy_list=myList.copy()
+
+##
+ from collections import deque
+dq = deque([1, 2, 3]) 
+dq.appendleft(0)  # Insert at the beginning
+dq.append(4)      # Insert at the end
+print(dq)
+#
+##
+from itertools import permutations, combinations
+items = [1, 2, 3]
+print(list(permutations(items, 2)))  # All 2-item orderings
+print(list(combinations(items, 2)))  # All 2-item groups
+#
+
+
+
+
+
+
+016
 
 
 
