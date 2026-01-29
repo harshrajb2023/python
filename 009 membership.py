@@ -5,6 +5,15 @@ print("Python" in text)
 print("World" in text)    
 print("\n") 
 
+
+#output
+Hello, Python!
+True
+False
+
+
+
+
 #list
 fruits = ["apple", "banana", "cherry"]
 print(fruits)
