@@ -7,10 +7,15 @@ print(" \n ")
 print(f"Name: {name}\nAge: {age}")
 print(f"Line {i}\n", end="")  # Avoids extra newlines
 
+
+
 002
 a,b,c=11,22,33  // good
 a=11,b=2,c=3     wrong
 x = y = z = 5
+
+
+
 
 005
 #A
@@ -26,14 +31,21 @@ result = arithmetic_operations(numbers, 5)
 for operation, values in result.items():
     print(f"{operation}: {values}")
 
+
+
 006
 print("{a} == {b}: {a == b}") 
+
+
+
 
 
 008
 #bitwise operator
 result = a & b 
 result = a ^ b 
+
+
 
 
 
@@ -54,4 +66,137 @@ person = {"name": "Alice", "age": 25, "city": "New York"}
 numbers = {10, 20, 30, 40}
 
 
-010
+
+
+
+
+
+
+
+011
+for i in range(1, 6):
+while count <= 5:
+
+
+
+
+
+
+
+012
+break
+continue
+pass  # Placeholder,       # does nothing, just a placeholder
+
+
+
+
+
+
+
+013
+status = "Adult" if age >= 18 else "Minor"
+# 1. Standard ternary operator
+min_val1 = a if a < b else b
+# 2. Tuple indexing
+min_val2 = (b, a)[a < b]  
+# 3. Dictionary mapping
+min_val3 = {True: a, False: b}[a < b]
+# 4. Logical and/or
+min_val4 = (a < b and a) or b  
+
+
+
+
+
+
+014
+command = input("Enter command (start/stop): ")
+match command:
+    case "start":
+        print("Starting...")
+    case "stop":
+        print("Stopping...")
+    case _:
+        print("Unknown command")
+
+
+
+
+
+
+
+
+015
+
+my_list = [10, 20, 30, 40, 50]
+print(my_list[0])    # First element
+print(my_list[-1])   # Last element
+print(my_list[1:4])  # Slice from index 1 to 3
+my_list[1] = 25  # Change value at index 1
+mylist.append(60)    # add at the end
+myList.insert(2, 45)   # add in index 2
+myList.remove(30)    # remove first occurence of 30
+poped_value = muList.pop()   # remove and return last element
+myList.sort()    # sorting accending order 
+myList.reverse()     # reverse the strrign
+squared_all_element_in_list = [ x**2 for x in list]  
+squared = [x*X for x in my_list]      // Incorrect / buggy version
+squared_all_element_in_list = list(map(lambda x: x ** 2, numbers))
+squared_list = np.square(numbers).tolist()
+squared_list = list(map(pow, numbers, [2] * len(numbers)))
+
+##
+squared_list = []
+for x in numbers:
+    squared_list.append(x ** 2)
+#
+merged_lists= list1 + list2
+list1.extend(list2)   // print(list1)    then printed to all list elements both
+
+##
+Explanation (quick)
+zip(names, scores) combines elements index-wise
+Each pair becomes a tuple
+list() converts the zip object into a list
+
+paired_list= list(zip(name, score))
+note: The extra 55 in scores is ignored, because names has only 3 elements.
+#
+pair_list =  [(names[i], scores[i]) for i in range(len(names))]
+
+pair_list =  [(names[i], score) for i, score in enumerate(scores)]
+note : enumerate() is used when you want both the index and the value while looping over something.
+##
+nested_list= [ (1,3), (2, 4), (5, 8) ]
+flat_list = [item for sublist in nested_list for item in sublist]
+print(flat_list)   // [1, 3, 2, 4, 5, 8]
+note nested_list= [ (1,3), (2, 4), (5, 8) , (3, 4)] then output = [1, 3, 2, 4, 5, 8, 3, 4]
+
+other  way
+nested_list = [[1, 2], [3, 4], [5, 6]]
+flat_list = sum(nested_list, [])
+print(flat_list) // [1, 2, 3, 4, 5, 6]
+#
+unique_numbers = list(set(number))  # note number as a list convert to set and then convert to list , then return unique
+##
+students = [("Alice", 25), ("Bob", 20), ("Charlie", 22)]
+// sort by age
+sorted_student = sorted(students, key=lambda x: x[1]) 
+
+words = ["apple", "banana", "kiwi", "grape"]
+// Sort by word length
+sorted_words= sprted(words, key=len)
+
+// Sort in descending order
+myList = [1, 2, 3, 4, 5]
+descending_items= sorted(myList,reverse=True)
+
+//  Reverse using slicing
+reverse_list= myList[::-1]
+
+#
+
+
+
+
